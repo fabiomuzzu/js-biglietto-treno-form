@@ -17,12 +17,18 @@ button.addEventListener('click', function(){
     
     // Calcolo sconto in base all'età
     if (eta < 18){
-        full_price = full_price * 0.8;
+        full_price = (full_price * 0.8).toFixed(2);
         console.log(full_price);
     }
     
     else if (eta > 65){
-        full_price = full_price * 0.6;
+        full_price = (full_price * 0.6).toFixed(2);
         console.log(full_price);
     }
+    else{
+        full_price = (km * tariffa).toFixed(2);
+        console.log(full_price);
+    }
+
+    document.getElementById("price_display").innerHTML = `In base alla tua età (${eta}anni) e ai chilometri che devi percorrere (${km}km), il tuo biglietto avrà un costo di €${full_price}`;
 });
