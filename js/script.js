@@ -1,5 +1,3 @@
-
-
 // Script per visualizzare i dati della form in console
 const button = document.querySelector('.btn');
 
@@ -31,5 +29,9 @@ button.addEventListener('click', function(){
     }
 
     // Output del prezzo in html
-    document.getElementById("price_display").innerHTML = `In base ai chilometri che devi percorrere (${km}km), ed alla tua età (${eta}anni) il tuo biglietto avrà un costo di €${full_price}.`;
+    document.getElementById("price_display").innerHTML = `In base ai chilometri che devi percorrere (${km}km), ed alla tua età (${eta}anni) il tuo biglietto avrà un costo di €${full_price}`;
+
+    document.getElementById('content_box').style.border = "1px solid white"
+
+    document.getElementById('content_box').style.borderRadius = "25px"
 });

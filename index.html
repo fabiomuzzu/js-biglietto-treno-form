@@ -4,33 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Train Ticket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <!-- Inserimento form -->
-
+<body class="bg_orange">
+    
     <!-- Inserimento Input -->
-    <div>
-        <div>
-    
-            <!-- Input per chilometri -->
-            <span class="input-group-text">Chilometri</span>
-            <input type="number" min="1" max="9999" aria-label="km" class="form-control" id="km">
-            
-            <!-- Input per Età -->
-            <span class="input-group-text">Età</span>
-            <input type="number" min="0" max="120" aria-label="eta" class="form-control" id="eta">
-            
+    <div class="container">
+        <div class="row g-4 justify-content-center">
+            <div class="col-12">
+                <div class="content">
+                    <h1 class="text-center my-3 text-light">
+                        Calcola il prezzo del tuo biglietto
+                    </h1>
+                </div>
+            </div>
+            <!-- Inserimento form -->
+            <div class="col-4">
+                <!-- Input per chilometri -->
+                <label for="km" class="form-floating" >Chilometri</label>
+                <input type="number" min="1" max="9999" aria-label="km" class="form-control" id="km">
+            </div>
+            <div class="col-4">
+                <!-- Input per Età -->
+                <label for="eta" class="form-floating">Età</label>
+                <input type="number" min="0" max="120" aria-label="eta" class="form-control" id="eta">
+            </div>
+            <div class="col-8 d-flex justify-content-center">
+                <!-- Pulsante submit prezzo -->
+                <button class="btn btn-primary">Prezzo</button>
+            </div>
+            <div class="col-12">
+                <div id="content_box">
+                    <h1 id="price_display" class="text-center"></h1>
+                </div>
+            </div>
         </div>
-    
-        <!-- Pulsante submit prezzo -->
-        <button class="btn btn-primary">Prezzo</button>
     </div>
-
-    <div>
-        <h1 id="price_display"></h1>
-    </div>
-
-<script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
