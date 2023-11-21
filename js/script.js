@@ -31,6 +31,7 @@ button.addEventListener('click', function(){
     // Output del prezzo in html
     document.getElementById("price_display").innerHTML = `In base ai chilometri che devi percorrere (${km}km), ed alla tua età (${eta}anni) il tuo biglietto avrà un costo di €${full_price}`;
 
+    // Modifiche stile output
     document.getElementById('content_box').style.border = "1px solid white"
 
     document.getElementById('content_box').style.borderRadius = "25px"
