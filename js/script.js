@@ -11,3 +11,15 @@
 // else{
 //     full_price = full_price
 // }
+
+// Script per visualizzare i dati della form in console
+const button = document.querySelector('.btn');
+
+button.addEventListener('click', function(){
+
+    let km = document.getElementById('km').value;
+    let eta = document.getElementById('eta').value;
+
+    console.log(km);
+    console.log(eta);
+});
