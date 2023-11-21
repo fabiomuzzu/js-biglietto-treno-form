@@ -7,27 +7,24 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
     <!-- Inserimento form -->
-    <form>
+    <!-- Inserimento Input -->
 
-        <!-- Inserimento Input -->
+    <div>
 
-        <div>
+        <!-- Input per chilometri -->
+        <span class="input-group-text">Chilometri</span>
+        <input type="number" min="1" max="9999" aria-label="km" class="form-control" id="km">
+        
+        <!-- Input per Età -->
+        <span class="input-group-text">Età</span>
+        <input type="number" min="0" max="120" aria-label="eta" class="form-control" id="eta">
+        
+    </div>
 
-            <!-- Input per chilometri -->
-            <span class="input-group-text">Chilometri</span>
-            <input type="number" min="1" max="9999" aria-label="km" class="form-control" id="km">
-            
-            <!-- Input per Età -->
-            <span class="input-group-text">Età</span>
-            <input type="number" min="0" max="120" aria-label="eta" class="form-control" id="eta">
-            
-        </div>
+    <!-- Pulsante submit prezzo -->
+    <button class="btn btn-primary">Prezzo</button>
 
-        <!-- Pulsante submit prezzo -->
-        <button class="btn btn-primary" type="submit">Prezzo</button>
-    </form>
 <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
